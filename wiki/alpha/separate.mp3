@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="data-spm" content="1" />
+        <title>security-X5</title>
+        <script src="//g.alicdn.com/kissy/k/1.4.1/seed-min.js?t=20140212">
+        </script>
+        <link rel="stylesheet" type="text/css" href="//g.alicdn.com/tb/err/0.8.0/err/40x/index-min.css"
+        />
+    </head>
+    
+    <body>
+        <div id="page">
+            <div id="content">
+                <div id="J_Header" class="header clearfix">
+                    <h1 id="logo" class="logo">
+                        <a href="//www.taobao.com/" title="淘宝网 Taobao.com - 阿里巴巴旗下网站" target="_top">
+                            淘宝网
+                            <span>
+                            </span>
+                        </a>
+                    </h1>
+                </div>
+                <div id="main">
+                    <div id="banner" style="margin-right:0px">
+                        <a id="J_Banner">
+                            <img src="//gtms02.alicdn.com/tps/i2/T1zL8ZFqFgXXaESgf7-520-500.png" />
+                        </a>
+                    </div>
+                    <div id="err" data-spm="1997481305" style="width:350px">
+                        <div class="tips" style="font-size:23px">
+                            <p>
+                                亲，小二正忙，滑动一下马上回来
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                        <div class="reason">
+                            <script>
+    var loadScript = function (src, callback) {
+        var script = document.createElement('script'),
+            head = document.getElementsByTagName('head')[0];
+        script.type = 'text/javascript';
+        script.charset = 'UTF-8';
+        script.src = src;
+        if (script.addEventListener) {
+            script.addEventListener('load',
+                function () {
+                    callback();
+                },
+                false);
+        } else if (script.attachEvent) {
+            script.attachEvent('onreadystatechange',
+                function () {
+                    var target = window.event.srcElement;
+                    if (target.readyState == 'loaded') {
+                        callback();
+                    }
+                });
+        }
+        head.appendChild(script);
+    };
+    var scene = "";
+    if (navigator.userAgent.match(/.*(iPhone|iPad|Android|ios|SymbianOS|Windows Phone).*/i)) {
+        scene = "register_h5";
+        loadScript('//g.alicdn.com/sd/nch5/index.js', ncinit);
+    } else {
+        scene = "register";
+        loadScript('//g.alicdn.com/sd/ncpc/nc.js', ncinitpc);
+    }
+    function ncinitpc() {
+        UA_Opt.Flag = 880846;
+        document.getElementById("nocaptcha").style.cssText = "margin-top:-10px";
+        noCaptcha({
+            renderTo: "#nocaptcha",
+            appkey: "X82Y__8a2c9bd497f738047807499ac79031c4",
+            token: "4071c45a58855dc44de4b99b6ed4e64f",
+            scene: scene,
+            is_Opt: 1,
+            callback: function (data) {
+                document.getElementById("nc-session-id").value = data.csessionid;
+                document.getElementById("nc-sig").value = data.sig;
+                document.getElementById("nc-verify-form").submit();
+            }
+        });
+    }
+    function ncinit() {
+        UA_Opt.Flag = 880846;
+        NoCaptcha.init({
+            renderTo: "#nocaptcha",
+            appkey: "X82Y__8a2c9bd497f738047807499ac79031c4",
+            token: "4071c45a58855dc44de4b99b6ed4e64f",
+            scene: scene,
+            is_Opt: 1,
+            callback: function (data) {
+                document.getElementById("nc-session-id").value = data.csessionid;
+                document.getElementById("nc-sig").value = data.sig;
+                document.getElementById("nc-verify-form").submit();
+            }
+        });
+        NoCaptcha.setEnabled(true);
+    }
+</script>
+<center>
+    <div id="nocaptcha" style="margin-top:20px">
+    </div>
+</center>
+<form id="nc-verify-form" action="//login.alibaba-inc.com:443/ssoLogin.htm/_____tmd_____/verify/" method="GET">
+    <input name="nc_token" value="4071c45a58855dc44de4b99b6ed4e64f" type="hidden">
+    <input name="nc_session_id" id="nc-session-id" value="" type="hidden">
+    <input name="nc_sig" id="nc-sig" value="" type="hidden">
+    <input name="x5secdata" id="x5secdata" type="hidden" value="5e0c8e1365474455070961b803bd560607b52cabf5960afff39b64ce58073f788fb8ab2f9d0f169b0f0d935613ef744700ccb134d1e850da1653a4877b8c184546f7c9186e010373837c4469d4c1394c45cb0ce36cef9f62cbd52852a03cf8ba461ee819ca12264cfd380e1ff9a318175a3ca560214bf0696ca4ee546130d5d7f26d6ed6fa02098e8586fc3b1f4c158cebc95efb4d9f01e7eb68b81002ffabea385baac042dffdd84b2678e72e8fcc7731d18ce548cb7abb31f72075b0394169aa6a1b24468b152a358d6d0144f5469e152f464bf81d79052d4e5014a53c08e4191f66193485b6483a12a954f3f233154b4831b28fc37ff11520930e17f768195c237456e0a6b4a4ec4e85e56abf03011a66fc14f736ed45bc53517cde99db61073bd58fe0d56bd5ecdf0725038f40906e5fa9eec862fef6a1dfd23d6b4c786a02a92cb712650dd9e5b8d033777a42c4bc5f0997566e710a8285500ec22474b28a90bb55fc480f679c694e1eadebde7b216448f9c51bf40ece9d225446aea8e1261b7f764385dfac9875f00815d4a5d12f5cbbb778ddf8c3bc074f7419a546be4a6c7fe3c998f44444136f30d430f07b456067980ea18b125a07cbebf7f20c82ad8de19a96aac7b349001af1f60afe7079a5fe3afb7c52d87df496aaa0569455bab8eb2cfbfabb205a7d29ff3a576645acfdad1d09d55c6caa2e67053abfd0472125340c54b9c11e73279dab78ff44c0ee3df15875aca9b7b257e14261b54437d874f820f148c5c2f293dfd3365820851908f4fba1f194712a21435d7ea4bfd020f66d7a58355eee226c36c36fa9cb47e411f3d973ee6fb871a15923747395d28d4e2afa526ff41e4e97c65402435dd81735693bb079aff96d91361aaf635d8bcc9375d7d955fae8b00b88d620dd2454aa3a4b3dada076be04c4a2e51f0119a5a31f729f4ded266cd4cb3f3137e44645982a591aff3eea7558da34351930bc6bd8c8f04eb2c1c730c1412f523be3c8e7">
+    <input name="x5step" id="x5step" type="hidden" value="100">
+    <input name="nc_app_key" id="nc_app_key" type="hidden" value="X82Y__8a2c9bd497f738047807499ac79031c4">
+</form>
+</script>
+<script>
+    if (window.location.host == "world.taobao.com") {
+        document.getElementById("nc-verify-form").action = document.getElementById("nc-verify-form").action.replace("buy.taobao.com", "world.taobao.com/buy");
+    }
+    if (window.location.host == "tw.taobao.com") {
+        document.getElementById("nc-verify-form").action = document.getElementById("nc-verify-form").action.replace("buy.taobao.com", "tw.taobao.com/buy");
+    }
+</script>
+                            <br />
+                            4071c45a58855dc44de4b99b6ed4e64f
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+        <script>
+            KISSY.config({
+                packages: {
+                    err: {
+                        base: '//g.alicdn.com/tb/err/0.8.0/'
+                    }
+                }
+            }),
+            KISSY.use('err/40x/index',
+            function(e, i) {
+                i.init()
+            });
+        </script>
+ <script>
+var referrer=document.referrer;
+if (referrer && referrer.indexOf("__tmd__")===-1 ){
+  //如果包含 referrer ，且 referrer 非 霸下验证页面
+    localStorage.x5referer = document.referrer;
+}else{
+    localStorage.x5referer = window.location.href;
+}
+</script> 
+        <div id="footer">
+            <span class="g_foot-line">
+            </span>
+        </div>
+        <div id="server-num">
+        </div>
+    </body>
+
+</html>
